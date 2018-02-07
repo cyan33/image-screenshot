@@ -6,7 +6,7 @@ export function download(url, fullName) {
   anchor.click();
 }
 
-export default function screenshot(imgNode, format = 'png') {
+export default function screenshot(imgNode, format = 'png', quality = 0.97) {
   const canvas = document.createElement('canvas')
   canvas.width = imgNode.width
   canvas.height = imgNode.height
@@ -17,7 +17,7 @@ export default function screenshot(imgNode, format = 'png') {
   imgNode.setAttribute('crossOrigin', 'anonymous')
 
   context.drawImage(imgNode, 0, 0, canvas.width, canvas.height)
-  const url = canvas.toDataURL(`image/${format}`)
+  const url = canvas.toDataURL(`image/${format}`, quality)
 
   return {,
     url,

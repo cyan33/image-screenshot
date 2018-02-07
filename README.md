@@ -37,7 +37,7 @@ download(url, 'image.jpeg')  // the image will be downloaded into `image.jpeg`
 
 ## APIs
 
-- `screenshot(img: DOMNode, format: string)`: get the base64 url in a specific format, which is by default `png`. Returns a thenable object:
+- `screenshot(img: DOMNode [, format: string, quality: float])`: get the base64 url in a specific format, which is by default `png`. The image resolution quality is a float number that ranges from 0 to 1. The default is 0.97. The function returns a thenable object:
 
 ```js
 {
