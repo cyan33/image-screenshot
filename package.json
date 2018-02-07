@@ -1,0 +1,25 @@
+{
+  "name": "@changyan/image-screenshot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./lib/index.js",
+  "scripts": {
+    "build": "babel src -d lib",
+    "prePublishOnly": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cyan33/image-screenshot.git"
+  },
+  "keywords": [],
+  "author": "Chang Yan <thomasyim94@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cyan33/image-screenshot/issues"
+  },
+  "homepage": "https://github.com/cyan33/image-screenshot#readme",
+  "dependencies": {
+    "babel-cli": "^6.26.0"
+  }
+}
