@@ -19,7 +19,7 @@ export default function screenshot(imgNode, format = 'png', quality = 0.97) {
   context.drawImage(imgNode, 0, 0, canvas.width, canvas.height)
   const url = canvas.toDataURL(`image/${format}`, quality)
 
-  return {,
+  return {
     url,
     then: (cb) => {
       cb(url)

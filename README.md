@@ -10,6 +10,10 @@ There is a more famous library, [html2canvas](https://github.com/niklasvh/html2c
 
 ## Usage
 
+```sh
+npm install --save image-screenshot
+```
+
 ```js
 import screenshot from 'image-screenshot'
 
