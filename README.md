@@ -19,16 +19,15 @@ import screenshot from 'image-screenshot'
 
 const img = document.getElementById('my-img')
 
+screenshot(img).download()
+```
+
+You might need some flexibility during the process, in which you could do:
+
+```js
 screenshot(img).then((url) => {
   console.log('the base64 data url of the image is:', url)
 })
-```
-
-even more, you could do:
-
-```js
-// it will automatically download the image for you
-screenshot(img).download()
 ```
 
 Other than those, there is a helper function `download` that you could use elsewhere, after you get the base64 url:
