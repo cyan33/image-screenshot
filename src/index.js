@@ -5,7 +5,6 @@ export function download(url, fullName) {
   document.body.appendChild(anchor)
   anchor.click()
   document.body.removeChild(anchor)
-  window.URL.revokeObjectURL(url)
 }
 
 export default function screenshot(imgNode, format = 'png', quality = 0.97) {
