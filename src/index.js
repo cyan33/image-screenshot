@@ -1,9 +1,11 @@
 export function download(url, fullName) {
   const anchor = document.createElement('a')
   anchor.href = url
+  anchor.style.display = 'none'
   anchor.setAttribute('download', fullName)
-
-  anchor.click();
+  document.body.appendChild(anchor)
+  anchor.click()
+  document.body.removeChild(anchor)
 }
 
 export default function screenshot(imgNode, format = 'png', quality = 0.97) {
