@@ -1,6 +1,7 @@
 export function download(url, fullName) {
   const anchor = document.createElement('a')
   anchor.href = url
+  anchor.style.display = 'none'
   anchor.setAttribute('download', fullName)
   document.body.appendChild(anchor)
   anchor.click()
